@@ -2,7 +2,7 @@
 ## Author: Bruno Jacobs - October 19, 2015
 
 ## -- Functions
-## -- 1) makeCacheMatrix : takes a square invertible matrix as input and returns a list of 4 functions attached to the matrix object
+## -- 1) makeCacheMatrix : takes a square invertible matrix as input and returns a list of 4 functions
 ## -- 2) cacheSolve : returns the inverse of the matrix by computation or directly from the cache if it already exists
 
 makeCacheMatrix <- function(x = matrix()) {
