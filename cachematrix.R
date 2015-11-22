@@ -2,18 +2,18 @@
 ## Author: Bruno Jacobs - October 19, 2015
 
 ## -- Functions
-## -- 1) makeCacheMatrix : takes a square invertible matrix as input and stores it in the parent environment (cache)
+## -- 1) makeCacheMatrix : takes a square invertible matrix as input and returns a list of 4 functions attached to the matrix object
 ## -- 2) cacheSolve : returns the inverse of the matrix by computation or directly from the cache if it already exists
 
 makeCacheMatrix <- function(x = matrix()) {
     
     ## -- makeCacheMatrix:
-    ## -- Takes a square invertible matrix as argument and stores it in the parent environment (cache)
-    ## -- Returns a list of 4 functions that act on the matrix and it's inverse
-    ## ----- set the matrix
-    ## ----- get the matrix
-    ## ----- set the inverse
-    ## ----- get the inverse
+    ## -- Takes a square invertible matrix as argument and returns a list of 4 functions attached to the matrix object
+    ## -- These functions act on the matrix and it's inverse which are both stored in the parent environment (cache)
+    ## ----- set: set the matrix
+    ## ----- get: get the matrix
+    ## ----- setinv: set the inverse
+    ## ----- getinv: get the inverse
     ## -- These functions are used in the cacheSolve function
     
     inv <- NULL
